@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Kanban Board Project
 
-## Getting Started
+This project is a Kanban Board application developed using Next.js and React.
+The application features drag-and-drop functionality with react-beautiful-dnd and assigns unique IDs to each board using UUID.
 
-First, run the development server:
+Features:
 
-```bash
+Drag and Drop: Supports drag and drop between lists and cards using react-beautiful-dnd.
+Unique IDs: Each board is assigned a unique ID using the uuid library.
+React and Next.js: Fast and efficient user interface with modern JavaScript technologies.
+
+Requirements:
+
+To run this project, you need to have the following tools installed on your computer:
+
+Node.js (>= 14.0.0)
+npm or yarn package manager
+
+Installation:
+Clone the repository: https://github.com/bariskisadal/kanban-board.git  
+cd kanban-board
+
+Install the necessary packages:
+
+npm install
+
+# or
+
+yarn install
+
+Running the Project
+
 npm run dev
+
 # or
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Packages Used:
+next: Framework for React applications.
+react: JavaScript library for building user interfaces.
+react-beautiful-dnd: Drag-and-drop functionality for React.
+react-dom: React package for working with the DOM.
+uuid: Library for generating unique IDs.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Project Structure:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+├── app
+│ ├── board
+│ ├── [id]
+├── page.tsx
+│ ├── page.tsx
+│ └── layout.tsx
+│ └── global.css
+├── components
+│ ├── Board.tsx
+│ ├── CardItem.tsx
+│ ├── Layout.tsx
+│ └── TaskList.tsx
+├── constanst
+│ ├── const.ts
+└── README.md
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+components: React components for the application.
+pages: Next.js pages.
+public: Static files (icons, etc.).
+styles: CSS files.
