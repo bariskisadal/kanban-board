@@ -1,30 +1,15 @@
-import CardItem from "@/components/CardItem";
-import Layout from "@/components/Layout";
-import Image from "next/image";
+"use client";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
-  return (
-    <Layout>
-      <div>
-        <CardItem category={""} />
-      </div>
-    </Layout>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    const boardId = uuidv4();
+    router.push(`/board/${boardId}`);
+  }, [router]);
+
+  return null;
 }
-
-// import { useEffect } from "react";
-// import { useRouter } from "next/navigation";
-// import { v4 as uuidv4 } from "uuid";
-
-// const Home = () => {
-//   const router = useRouter();
-
-//   useEffect(() => {
-//     const newBoardId = uuidv4();
-//     router.push(`/${newBoardId}`);
-//   }, [router]);
-
-//   return null;
-// };
-
-// export default Home;
