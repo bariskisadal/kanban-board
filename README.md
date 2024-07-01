@@ -45,20 +45,21 @@ uuid: Library for generating unique IDs.
 
 Project Structure:
 
+.
 ├── app
 │ ├── board
 │ ├── [id]
-├── page.tsx
 │ ├── page.tsx
 │ └── layout.tsx
+├── styles
 │ └── global.css
 ├── components
 │ ├── Board.tsx
 │ ├── CardItem.tsx
 │ ├── Layout.tsx
 │ └── TaskList.tsx
-├── constanst
-│ ├── const.ts
+├── constants
+│ └── const.ts
 └── README.md
 
 components: React components for the application.
