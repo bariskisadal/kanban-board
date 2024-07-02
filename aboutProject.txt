@@ -1,0 +1,15 @@
+Next js ile geliştirdiğim bu projede her panoya özel id leri olan
+sabit kartların olduğu ve kartların eklenbildiği bir kanbanboard uygulaması oluşturdum.
+uuid kullanarak her panoya uniq bir id atanıyor. 
+RootLayout: Uygulamanın temel yapı taşı olan bu bileşen, genel düzen ve stil yönetimini sağlar.
+Home: Kullanıcıların panolarını listeleyip yönetebileceği ana sayfa.
+Board: Her biri bir Kanban tablosunu temsil eden bileşen. Bu bileşenlerde görev kartlarını düzenlemek mümkündür.
+TaskList: Her bir görev kartının listelendiği bileşenlerdir. Kullanıcılar burada görev kartlarını ekleyebilir.
+UUID: Panoların benzersiz kimlikleri, her kullanıcıya özel oluşturulur ve bu kimlikler sayesinde her panoya tek ve kolay erişim sağlanır.
+Bu proje, kullanıcı dostu bir arayüzle Kanban yönetimini destekleyerek, görevleri organize etme ve işbirliği yapma sürecini kolaylaştırmayı hedefler.
+
+Next js ile modern ve performans odaklı bir web uygulaması geliştirme  uuid kullarak her bir board için benzersiz kimlik nasıl oluşturulur onu öğrendim 
+react ve tailwind css ile yapıyı oluşturdum ve koda entegre ettim tailwind css ile uzun zamandır çalışmıyordum bu konuda bilgilerimi pekiştirmiş oldum
+react içindeki state ve props kavramlarını daha iyi anlaedım ve bu bileşenleri kullandım 
+kullanıcı arayüzü için responsive bir tasarım yapmaya çalıştım ancak sürükle bırak özelliğini koda entegre edemedim bir kaç hata aldım.
+teknik bilgilerimi pekiştirme ve geliştirme imkanı sundu bu proje bana daha önce kanban board uygulaması geliştirmemiştim. 
