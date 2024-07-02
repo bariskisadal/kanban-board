@@ -14,7 +14,6 @@ export const backlogItems = [
 ];
 
 export const toDoItems = [
-  { title: "Tablet view", description: "", category: "new feature" },
   {
     title: "Mobile view",
     description:
@@ -39,12 +38,6 @@ export const inProgressItems = [
     title: "Mobile home screen",
     description: "Folders, tags, and notes lists are sorted by recent.",
     category: "new feature",
-  },
-  {
-    title: "Formatting options",
-    description:
-      "Mobile formatting bar expands and collapses when tapping the format icon.",
-    category: "formatting",
   },
 ];
 
