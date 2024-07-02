@@ -21,7 +21,7 @@ const TaskList = ({ title, items }) => {
   };
 
   return (
-    <div className="w-1/5 p-4 bg-gray-800 rounded-md relative">
+    <div className="w-full md:w-1/4 p-4 bg-gray-800 rounded-md relative mb-4 md:mb-0">
       <h2 className="text-white font-bold mb-4">{title}</h2>
       {taskItems.map((item, index) => (
         <CardItem
@@ -58,7 +58,7 @@ const TaskList = ({ title, items }) => {
       {!showInputs && (
         <button
           onClick={() => setShowInputs(true)}
-          className="absolute bottom-2 left-4 bg-blue-500 text-white p-2 rounded-full"
+          className="absolute bottom-2 left-4 bg-blue-500 text-white p-2 rounded-full mt-4"
         >
           +
         </button>
